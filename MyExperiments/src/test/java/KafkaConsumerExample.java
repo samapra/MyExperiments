@@ -29,6 +29,8 @@ public class KafkaConsumerExample {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, LongDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 
+
+        
         // Create the consumer using props.
         final Consumer<Long, String> consumer = new KafkaConsumer<>(props);
 
